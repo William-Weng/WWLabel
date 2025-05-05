@@ -1,0 +1,15 @@
+{
+  "originHash" : "5a74713887df54fd7e4e34f16364fbc74ed1789e29f657717298c786066010a4",
+  "pins" : [
+    {
+      "identity" : "wwlabel",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/William-Weng/WWLabel",
+      "state" : {
+        "revision" : "edd9d79b0ce8cddc151275451242ae288378bfb2",
+        "version" : "1.0.0"
+      }
+    }
+  ],
+  "version" : 3
+}

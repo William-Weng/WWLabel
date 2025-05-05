@@ -10,7 +10,7 @@ import WWLabel
 
 // MARK: - ViewController
 final class ViewController: UIViewController {
-
+    
     @IBOutlet weak var myLabel: WWLabel!
     
     override func viewDidLoad() {
