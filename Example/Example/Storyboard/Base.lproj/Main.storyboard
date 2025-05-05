@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ChatLeft" translatesAutoresizingMaskIntoConstraints="NO" id="Dnm-vD-BIQ">
+                                <rect key="frame" x="8" y="80" width="398" height="48"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aep-mi-Cf0" customClass="WWLabel" customModule="WWLabel">
+                                <rect key="frame" x="16" y="112" width="382" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHE-Un-pha">
+                                <rect key="frame" x="143" y="431" width="128" height="34"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="nJO-tH-Cwn"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Touch Me">
+                                    <color key="titleColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopLoading:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XU5-iE-jAT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Dnm-vD-BIQ" firstAttribute="bottom" secondItem="aep-mi-Cf0" secondAttribute="bottom" constant="16" id="2JP-4b-e2h"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aep-mi-Cf0" secondAttribute="trailing" constant="16" id="Bit-xb-692"/>
+                            <constraint firstItem="Dnm-vD-BIQ" firstAttribute="leading" secondItem="aep-mi-Cf0" secondAttribute="leading" constant="-8" id="KU5-Br-oby"/>
+                            <constraint firstItem="Dnm-vD-BIQ" firstAttribute="trailing" secondItem="aep-mi-Cf0" secondAttribute="trailing" constant="8" id="TWh-tm-lMN"/>
+                            <constraint firstItem="JHE-Un-pha" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZoK-7y-slh"/>
+                            <constraint firstItem="aep-mi-Cf0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="64" id="a0K-qE-g9Q"/>
+                            <constraint firstItem="Dnm-vD-BIQ" firstAttribute="top" secondItem="aep-mi-Cf0" secondAttribute="top" constant="-32" id="ptr-MJ-W4M"/>
+                            <constraint firstItem="JHE-Un-pha" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yVM-uy-Unm"/>
+                            <constraint firstItem="aep-mi-Cf0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ymZ-Mi-Z3q"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ASc-YT-plj"/>
+                    <connections>
+                        <outlet property="myLabel" destination="aep-mi-Cf0" id="p5u-8e-x6k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1959.4202898550727" y="-2.0089285714285712"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ChatLeft" width="40" height="31"/>
+    </resources>
+</document>
