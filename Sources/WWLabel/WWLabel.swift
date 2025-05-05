@@ -63,7 +63,7 @@ private extension WWLabel {
     /// 定時作用的功能
     /// - Parameter timer: Timer
     @objc func timerAction(timer: Timer) {
-        attributedTextSetting(text: loadingText, prefixString: prefixString, alphaArray: &alphaArray)
+        attributedTextSetting(text: loadingText, prefixString: prefixString, loadingTextColor: loadingTextColor, loadingFont: loadingFont, alphaArray: &alphaArray)
     }
 }
 
@@ -73,8 +73,11 @@ private extension WWLabel {
     /// 設定Loading文字的透明度等…
     /// - Parameters:
     ///   - text: String
+    ///   - prefixString: String
+    ///   - loadingTextColor: UIColor
+    ///   - loadingFont: UIFont
     ///   - alphaArray: inout [Double]
-    func attributedTextSetting(text: String, prefixString: String, alphaArray: inout [Double]) {
+    func attributedTextSetting(text: String, prefixString: String, loadingTextColor: UIColor, loadingFont: UIFont, alphaArray: inout [Double]) {
         
         let displayText = prefixString + text
         let attributedString = NSMutableAttributedString(string: displayText)
